@@ -2,7 +2,7 @@ let alertNumberCart = document.getElementById("alertNumberCart");
 
 function AlertCartFunction() {
     let alertMemory = JSON.stringify(localStorage.memoryCart);
-    let arrNumberAlerts = alertMemory.prototype.split(",");
+    let arrNumberAlerts = alertMemory.split(",");
     arrNumberAlerts = arrNumberAlerts.filter(value => value != '"' && value != '""');
     if (arrNumberAlerts.length != 0) {
         alertNumberCart.style.display = "inline-flex";
