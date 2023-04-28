@@ -138,16 +138,12 @@ let index;
 let elementNumber;
 let elementPlus;
 
-function ButtonAddCartFunction(icon, indexOfBarSearch) {
+function ButtonAddCartFunction(indexOfBarSearch) {
     const buttonAddCart = document.getElementById("buttonAddCart").addEventListener("click", () => {
         let notEqual = true;
         let arrAddMemory = localStorage.memoryCart;
         console.log(indexOfBarSearch)
-        if (indexOfBarSearch != undefined) {
-            index = indexOfBarSearch;
-        } else {
-            index = [...contentSalesDivs].indexOf(icon);
-        };
+        index = indexOfBarSearch;
         if (arrAddMemory != undefined) {
             arrAddMemory = arrAddMemory.split(",");
             if (arrAddMemory[0] == '""') {
