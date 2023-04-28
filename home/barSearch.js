@@ -99,7 +99,65 @@ function SearchResponseFunction() {
             });
             let indexProduct = e.parentElement;
             indexProduct = indexProduct.getAttribute("data-indexProduct");
-            ButtonAddCartFunction(undefined, indexProduct);
+            ButtonAddCartFunction(indexProduct);
+            let index;
+let elementNumber;
+let elementPlus;
+
+function ButtonAddCartFunction(indexOfBarSearch) {
+    const buttonAddCart = document.getElementById("buttonAddCart").addEventListener("click", () => {
+        let notEqual = true;
+        let arrAddMemory = localStorage.memoryCart;
+        console.log(indexOfBarSearch)
+        index = indexOfBarSearch;
+        if (arrAddMemory != undefined) {
+            arrAddMemory = arrAddMemory.split(",");
+            if (arrAddMemory[0] == '""') {
+                arrAddMemory.shift();
+            };
+            arrAddMemory.forEach(e => {
+                if (e != undefined) {
+                    if (e.indexOf('-') > -1) {
+                        elementPlus = e.split("-");
+                        elementNumber = parseInt(elementPlus[1]);
+                        elementPlus = elementPlus[0];
+                    } else {
+                        elementPlus = e;
+                        elementNumber = 1;
+                    };
+                    if (index == elementPlus && elementPlus != '') {
+                        elementNumber += parseInt(viewAmount.value);
+                        index = arrAddMemory.indexOf(e);
+                        arrAddMemory.splice(index, 1);
+                        arrAddMemory.push(elementPlus + "-" + elementNumber);
+                        localStorage.memoryCart = arrAddMemory;
+                        arrAddMemory = [];
+                        notEqual = false;
+                    };
+                }; 
+            });
+            if (notEqual) {
+                if (viewAmount.value > 1) {
+                    index = index + "-" + viewAmount.value;
+                } else {
+                    index = index;
+                };
+                arrAddMemory.push(index);
+                localStorage.memoryCart = arrAddMemory;
+                arrAddMemory = [];
+            }; 
+        } else {
+            if (viewAmount.value > 1) {
+                localStorage.memoryCart = index + "-" + viewAmount.value;
+            } else {
+                localStorage.memoryCart = index;
+            };
+        };
+        AlertCartFunction();
+        ViewCartContentFunction();
+    });
+};
+}));
             let clickExitProduct = document.getElementById("clickExitProduct").addEventListener("click", () => {
                 if (screen.width >= 720) {
                     barPrincipal.style.display = "inline-flex";
