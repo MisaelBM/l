@@ -62,8 +62,8 @@ let addCartClick = document.querySelectorAll(".addCartClick").forEach(add => add
     AlertCartFunction();
      ViewCartContentFunction();
 
-const cartView = document.getElementById("cartView");
-const cartVisor = document.getElementById("cartVisor");
+let cartView = document.getElementById("cartView");
+let cartVisor = document.getElementById("cartVisor");
 let cartContent = document.getElementById("cartContent").addEventListener("click", ViewCartContentFunction);
 
 function ViewCartContentFunction() {
