@@ -61,7 +61,6 @@ let addCartClick = document.querySelectorAll(".addCartClick").forEach(add => add
     arrMemoryCart = [];
     AlertCartFunction();
      ViewCartContentFunction();
-}))
 
 const cartView = document.getElementById("cartView");
 const cartVisor = document.getElementById("cartVisor");
