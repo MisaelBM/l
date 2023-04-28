@@ -60,7 +60,7 @@ let addCartClick = document.querySelectorAll(".addCartClick").forEach(add => add
     localStorage.memoryCart = arrMemoryCart;
     arrMemoryCart = [];
     AlertCartFunction();
-    ViewCartContentFunction();
+     ViewCartContentFunction();
 }));
 
 const cartView = document.getElementById("cartView");
