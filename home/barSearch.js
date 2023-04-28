@@ -157,7 +157,6 @@ function ButtonAddCartFunction(indexOfBarSearch) {
         ViewCartContentFunction();
     });
 };
-});
             let clickExitProduct = document.getElementById("clickExitProduct").addEventListener("click", () => {
                 if (screen.width >= 720) {
                     barPrincipal.style.display = "inline-flex";
