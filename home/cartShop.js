@@ -60,6 +60,7 @@ let addCartClick = document.querySelectorAll(".addCartClick").forEach(add => add
     localStorage.memoryCart = arrMemoryCart;
     arrMemoryCart = [];
     AlertCartFunction();
+<<<<<<< HEAD
     ViewCartContentFunction();
 }));
 
@@ -195,3 +196,6 @@ function ButtonAddCartFunction(icon, indexOfBarSearch) {
         ViewCartContentFunction();
     });
 };
+=======
+}));
+>>>>>>> c97aeae5ac43f96ca363188e62af5602e639125b
