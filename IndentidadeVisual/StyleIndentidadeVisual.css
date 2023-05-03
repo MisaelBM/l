@@ -1,0 +1,293 @@
+body {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    font-family: 'puritan', sans-serif;
+    overflow-x: hidden;
+}
+.bar-principal {
+    background-color: #343434;
+    padding: 10px;
+    height: 44px;
+    animation: bar-principal-anim 1s ease-in-out;
+    z-index: 2;
+}
+@keyframes bar-principal-anim {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.obj-bar-left {
+    position: absolute;
+    width: 45vw;
+    height: 40px;
+    left: 0;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    animation: bar-left-anim 2s ease-in-out;
+}
+@keyframes bar-left-anim {
+    0% {
+        left: -50vw;
+    }
+    100% {
+        left: 0;
+    }
+}
+.logo {
+    width: 150px;
+}
+.enterprise {
+    display: none;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 10px;
+}
+.button-enterprise {
+    border: 0;
+    color: white;
+    font-size: 15px;
+    background-color: rgba(0, 0, 0, 0);
+}
+.list-enterprise {
+    display: block;
+    position: absolute;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    top: -100vh;
+    z-index: 1;
+    transition: 0.5s;
+}
+.list-enterprise-anim {
+    top: 35px;
+    transition: 0.5s;
+}
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.li-enterprise {
+    margin: 15px;
+}
+.li-enterprise:hover {
+    margin: 5;
+    font-size: 18px;
+}
+.obj-bar-right {
+    position: absolute;
+    right: 0;
+    width: 45vw;
+    height: 40px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    animation: bar-right-anim 1.5s ease-in-out;
+}
+@keyframes bar-right-anim {
+    0% {
+        top: -100vh;
+    }
+    100% {
+        top: 0;
+    }
+}
+.products {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-right: 10px;
+}
+.button-products {
+    border: 0;
+    color: white;
+    font-size: 15px;
+    background-color: rgba(0, 0, 0, 0);
+    margin-left: 10px;
+}
+.list-products {
+    display: block;
+    position: absolute;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    top: -100vh;
+    z-index: 1;
+    transition: 0.5s;
+}
+.list-products-anim {
+    top: 35px;
+    transition: 0.5s;
+}
+.li-products {
+    margin: 15px;
+}
+.li-products:hover {
+    margin: 5;
+    font-size: 18px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.button-sign-up {
+    padding: 5px;
+    font-size: 10px;
+    border: 0;
+    border-radius: 10px;
+}
+.button-sign-up:hover {
+    font-size: 18px;
+    background-color: rgb(61, 106, 219);
+    padding: 10px;
+}
+@media (min-width: 662px) {
+    .enterprise {
+        display: flex;
+    }
+    .button-sign-up {
+        padding: 7px;
+        font-size: 15px;
+    }
+}
+.content-presentation {
+    width: 100%;
+    background-color: rgb(0, 36, 127);
+}
+.content-first-presentation {
+    width: 100%;
+    height: 45vw;
+}
+.content-img {
+    position: absolute;
+    right: 0;
+    width: 45vw;
+    overflow: hidden;
+    text-align: center;
+    animation: img-first-anim 1.5s ease-in-out;
+}
+.perfil-img {
+    width: 45vw;
+}
+@keyframes img-first-anim {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.first-presentation{
+    position: absolute;
+    left: 0;
+    color: white;
+    width: 50vw;
+    height: 45vw;
+    display: flex;
+    padding-left: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    animation: text-first-anim 1s ease-in-out;
+}
+.text-content-first-presentation {
+    height: min-content;
+    font-size: 1em;
+}
+@keyframes text-first-anim {
+    0% {
+        left: -10%;
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        left: 0;
+    }
+}
+.gradient-content {
+    background-image: linear-gradient(rgb(0, 36, 127, 1),rgb(0, 36, 127, 0.8), white);
+    height: 100px;
+    width: 100%;
+}
+@media (min-width: 600px) {
+    .text-content-first-presentation {
+        font-size: 2em;
+    }
+}
+.title-compromise {
+    max-width: 350px;
+    margin-left: 20px;
+}
+.values {
+    display: inline-block;
+    text-align: center;
+}
+@media (min-width: 1163px) {
+    .values {
+        display: inline-flex;
+        align-items: baseline;
+    }
+}
+.innovation {
+    display: inline-block;
+    margin: 40px;
+    color: rgb(0, 36, 127);
+    max-width: 300px;
+}
+.safety {
+    display: inline-block;
+    margin: 40px;
+    color: rgb(0, 36, 127);
+    max-width: 300px;
+}
+.ease {
+    display: inline-block;
+    margin: 40px;
+    color: rgb(0, 36, 127);
+    max-width: 300px; 
+}
+footer {
+    text-align: center;    
+}
+.logo-footer {
+    object-fit: contain;
+    width: 300px;
+}
+hr {
+    border: 1px solid black;
+}
+.budget-whatsapp {
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    margin: 15px;
+    text-align: end;
+}
+.budget {
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 1px;
+    border: 2px solid black;
+    animation: budget-anim 1s ease-in-out;
+}
+@keyframes budget-anim {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.whatsapp{
+    width: 40px;
+    height: 40px;
+}
