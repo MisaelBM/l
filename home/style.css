@@ -197,7 +197,7 @@ p {
 .cart-view {
     padding: 10px;
     min-width: 312px;
-    max-height: 90vh;
+    max-height: 100vh;
     overflow: auto;
     position: fixed;
     top: 0;
