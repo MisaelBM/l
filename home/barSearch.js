@@ -26,7 +26,7 @@ function SearchFunction() {
         if (productNoSpace.substring(0, indexProductText).indexOf(valueBarSearch) > -1 && valueBarSearch != '') {
             arrProductsSearch.push([...elementOfProducts].indexOf(e.querySelector("i")));
             if (arrProductsSearch.length <= 6) {
-                productsSearchVisor.innerHTML += `<a href="" class="response-search"><i class="fa-solid fa-magnifying-glass fa-sm"></i> ` + productNoSpace.substring(0, indexProductText) + "</a><br>";
+                productsSearchVisor.innerHTML += `<p class="response-search"><i class="fa-solid fa-magnifying-glass fa-sm"></i> ` + productNoSpace.substring(0, indexProductText) + "</p><br>";
                 searchVisor.style.display = "block";
                 searchVisor.style.textAlign = "start";
             };
