@@ -329,8 +329,8 @@ hr {
     display: inline-table;
     margin: 0.5rem;
     background-color: white;
-    width: 80px;
-    height: 200px;
+    width: 100px;
+    height: 220px;
     padding: 10px;
     border-radius: 10px;
     text-align: center;
@@ -338,12 +338,12 @@ hr {
 }
 .img-product{
     object-fit: contain;
-    height: 80px;
-    width: 60px;
+    height: 120px;
+    width: 100px;
 }
 .info-products {
     font-size: 12px;
-    width: 80px;
+    width: 100px;
     height: 60px;
     overflow: hidden;
     margin-bottom: 10px;
@@ -384,17 +384,17 @@ hr {
         top: 0;
     }
     .box-product {
-        width: 80px;
-        height: 180px;
+        width: 100px;
+        height: 200px;
     }
     .img-product{
         object-fit: contain;
-        height: 70px;
-        width: 80px;
+        height: 120px;
+        width: 100px;
     }
     .info-products {
         font-size: 12px;
-        width: 80px;
+        width: 100px;
     }
     .img-product-info {
         position: relative;
@@ -428,17 +428,17 @@ hr {
         top: 0;
     }
     .box-product {
-        width: 80px;
-        height: 200px;
+        width: 100px;
+        height: 220px;
     }
     .img-product{
         object-fit: contain;
-        height: 100px;
-        width: 80px;
+        height: 120px;
+        width: 100px;
     }
     .info-products {
         font-size: 12px;
-        width: 80px;
+        width: 100px;
     }
     .img-product-info {
         position: relative;
@@ -471,17 +471,17 @@ hr {
         margin-top: 0;
     }
     .box-product {
-        width: 100px;
-        height: 200px;
+        width: 150px;
+        height: 250px;
     }
     .img-product{
         object-fit: contain;
-        height: 130px;
-        width: 100px;
+        height: 180px;
+        width: 150px;
     }
     .info-products {
         font-size: 17px;
-        width: 100px;
+        width: 150px;
     }
     .img-product-info {
         position: absolute;
@@ -514,17 +514,17 @@ hr {
         margin-top: 0;
     }
     .box-product {
-        width: 100px;
-        height: 200px;
+        width: 150px;
+        height: 250px;
     }
     .img-product{
         object-fit: contain;
-        height: 130px;
-        width: 100px;
+        height: 180px;
+        width: 150px;
     }
     .info-products {
         font-size: 17px;
-        width: 100px;
+        width: 150px;
     }
     .img-product-info {
         position: absolute;
@@ -557,17 +557,17 @@ hr {
         margin-top: 0;
     }
     .box-product {
-        width: 100px;
-        height: 200px;
+        width: 150px;
+        height: 250px;
     }
     .img-product{
         object-fit: contain;
-        height: 130px;
-        width: 100px;
+        height: 180px;
+        width: 150px;
     }
     .info-products {
         font-size: 17px;
-        width: 100px;
+        width: 150px;
     }
     .img-product-info {
         position: absolute;
