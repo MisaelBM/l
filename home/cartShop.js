@@ -102,7 +102,7 @@ function ViewCartContentFunction() {
             cartVisor.innerHTML += `
             <div class="product-cart">
                 <img class="img-product-cart" src="${elementProductCartImg}" alt="">
-                <p>${elementProductCartText[0]} |</p><strong class="price">R$ ${elementProductCartText[1]}</strong><p>| Quantidade: ${amountElement}</p>
+                <p>${elementProductCartText[0]} </p><strong class="price">R$ ${elementProductCartText[1]}</strong><p> Qnt: ${amountElement}</p>
                 <i class="fa-solid fa-trash-can fa-sm trashIcon"></i>
             </div><br>
             `;
