@@ -69,12 +69,22 @@ a {
     font-size: 22px;
     transition: 0.8s;
 }
+.products {
+    color: white;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
 .service {
     background-color: white;
     border-radius: 15px;
     width: 75vw;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 20px;
+    box-shadow: 0px 10px 10px black;
     padding: 20px;
 }
 .service-box {
@@ -86,6 +96,66 @@ a {
 }
 .img-service {
     font-size: 60px;
+}
+.maintenance {
+    background-color: white;
+    border-radius: 15px;
+    width: 75vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 10px 10px black;
+    transition: 0.8s;
+}
+.title-maintenance {
+    font-size: 32px;
+    transition: 0.8s;
+}
+.text-maintenance {
+    font-size: 18px;
+    transition: 0.8s;
+}
+.maintenance:hover {
+    padding: 30px;
+}
+.maintenance:hover .title-maintenance {
+    font-size: 46px;
+    transition: 0.8s;
+}
+.maintenance:hover .text-maintenance {
+    font-size: 22px;
+    transition: 0.8s;
+}
+.signature {
+    background-color: white;
+    border-radius: 15px;
+    width: 75vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 10px 10px black;
+    transition: 0.8s;
+}
+.title-signature {
+    font-size: 32px;
+    transition: 0.8s;
+}
+.text-signature {
+    font-size: 18px;
+    transition: 0.8s;
+}
+.signature:hover {
+    padding: 30px;
+}
+.signature:hover .title-signature {
+    font-size: 46px;
+    transition: 0.8s;
+}
+.signature:hover .text-signature {
+    font-size: 22px;
+    transition: 0.8s;
 }
 hr {
     border: 1px solid black;
