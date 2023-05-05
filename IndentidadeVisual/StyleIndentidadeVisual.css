@@ -42,31 +42,10 @@ body {
     width: 150px;
 }
 .enterprise {
-    display: none;
+    display: inline-block;
     justify-content: center;
     align-items: flex-start;
     margin-left: 10px;
-}
-.button-enterprise {
-    border: 0;
-    color: white;
-    font-size: 15px;
-    background-color: rgba(0, 0, 0, 0);
-}
-.list-enterprise {
-    display: block;
-    position: absolute;
-    background-color: white;
-    border: 3px solid black;
-    border-radius: 15px;
-    padding: 10px;
-    top: -100vh;
-    z-index: 1;
-    transition: 0.5s;
-}
-.list-enterprise-anim {
-    top: 35px;
-    transition: 0.5s;
 }
 ol {
     list-style: none;
