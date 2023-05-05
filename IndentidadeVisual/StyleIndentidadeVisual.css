@@ -54,6 +54,7 @@ ol {
 }
 .li-enterprise {
     margin: 15px;
+    color: white; 
 }
 .li-enterprise:hover {
     margin: 5;
